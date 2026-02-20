@@ -22,7 +22,7 @@ app.post("/api/clip/", (req, res) => {
     // console.log("ClipID", clipId);
 
     if (bgColor == undefined || bgColor == null) {
-        bgColor = "slate";
+        bgColor = "#020617";
     }
 
     io.emit("clip", { clipId, channel, raider, clipTitle, bgColor });
